@@ -2,11 +2,13 @@ package sn.edu.isepat.eboutique.init;
 
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import lombok.RequiredArgsConstructor;
+import sn.edu.isepat.eboutique.repositories.ProduitElhadjiOmarRepository;
 
+
+@Order(2)
 @Component
-@RequiredArgsConstructor
 public class InitCategorie implements CommandLineRunner {
 
     private final CategorieRepository categorieRepository;
